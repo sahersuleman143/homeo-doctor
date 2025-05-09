@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Muhammad Suleman Ishaq | Homeopathic Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="public/logo2.png" alt="Logo" class="logo" />
+      <div class="header-text">
+        <h1>Dr. Muhammad Suleman Ishaq (Turiya)</h1>
+        <h2>Registered & Certified Homeopathic Practitioner</h2>
+        <h3>D.H.M.S., R.H.M.P. – Registered with National Council for Homeopathy, Pakistan</h3>
+        <p>Reg. No.: 45207 (National Council for Homeopathy, Pakistan)</p>
+        <p>Over 35 Years of Experience in Natural & Holistic Healing</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="profile-section">
+    <div class="container">
+      <img src="public/profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h2>About Me</h2>
+      <p>
+        I am a registered homeopathic doctor with over 35 years of clinical
+        experience. I specialize in treating chronic and acute conditions using
+        classical homeopathy for a safe and holistic recovery. Each treatment is
+        carefully tailored to the individual’s unique needs, ensuring lasting
+        health benefits.
+      </p>
+    </div>
+  </section>
+
+  <section id="treatments">
+    <div class="container">
+      <h2>Treatments Offered</h2>
+      <p>I offer a variety of treatments for the following conditions:</p>
+      <ul>
+        <li><strong>Chronic Illnesses</strong> – Asthma, Diabetes, Arthritis</li>
+        <li><strong>Hemorrhoids</strong> – Non-surgical, natural healing</li>
+        <li><strong>Skin Diseases</strong> – Acne, Eczema, Psoriasis</li>
+        <li><strong>Mental Health</strong> – Anxiety, Stress, Depression</li>
+        <li><strong>Women's Health</strong> – Menstrual & Hormonal Issues</li>
+        <li><strong>Children’s Health</strong> – Safe, gentle treatments</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> +92 3313895012</p>
+      <p><strong>Email:</strong> sulemanhomeo@gmail.com</p>
+      <p><strong>Clinic Address:</strong> TL 2/7 near Napier police station ,Lea Market, Karachi, Pakistan</p>
+      <a href="https://wa.me/923242304044" class="btn whatsapp-btn">Book on WhatsApp</a>
+      <a href="https://www.facebook.com/drmuhammadsuleman.ishaq/" class="btn facebook-btn">Follow on Facebook</a>
+    </div>
+  </section>
+
+  <section class="appointment">
+    <div class="container">
+      <h2>Book an Appointment</h2>
+      <form id="whatsappForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="text" id="issue" placeholder="Health Concern" required />
+        <input type="text" id="time" placeholder="Preferred Time" required />
+        <button type="submit" class="btn">Send on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dr. Muhammad Suleman Ishaq. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var issue = document.getElementById('issue').value;
+      var time = document.getElementById('time').value;
+
+      var whatsappURL = "https://wa.me/923242304044?text=" 
+        + "Appointment%20Request%0AName:%20" + encodeURIComponent(name) 
+        + "%0AHealth%20Concern:%20" + encodeURIComponent(issue) 
+        + "%0APreferred%20Time:%20" + encodeURIComponent(time);
+
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+</body>
+</html>
