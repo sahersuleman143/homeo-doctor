@@ -265,3 +265,46 @@ footer p {
     padding: 10px 20px;
   }
 }
+
+.clinic-timings {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.clinic-timings h2 {
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+.clinic-timings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clinic-timings li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Styling Icons */
+.contact i {
+  color: #6a11cb; /* Change the color to match your theme */
+  margin-right: 10px; /* Add some space between the icon and the text */
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  align-items: center; /* Align the icon and text vertically */
+}
+
+.contact i.fas {
+  font-size: 1.2rem; /* Make the icon size slightly bigger */
+}
