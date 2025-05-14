@@ -23,14 +23,24 @@ body {
 .container:hover {
   transform: scale(1.02);
 }
-
+/* 
 /* Header Section */
-header {
+/*header {
   padding: 40px 0;
   background-color: #ffffff;
   border-bottom: 2px solid #dce3e6;
   text-align: center;
+} */
+
+/* Header Section */
+header {
+  padding: 40px 0;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhMhy69CERTDjbJScVt8RzisCPAnlEnYlC0w&s') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
 }
+
+
 
 header .logo {
   max-width: 200px;
@@ -127,7 +137,7 @@ header .header-text p {
 
 /* Treatments Section */
 #treatments {
-  background-color: #f4f4f4;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   padding: 40px 0;
 }
 
@@ -138,12 +148,14 @@ header .header-text p {
   font-weight: 600;
 }
 
+
 #treatments p {
   color: #555;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 20px;
 }
+
 
 #treatments ul {
   list-style-type: none;
@@ -158,7 +170,7 @@ header .header-text p {
 }
 
 #treatments ul li strong {
-  color: #6a11cb;
+  color:  #6a11cb;;
 }
 
 /* Buttons */
@@ -266,31 +278,49 @@ footer p {
   }
 }
 
+
+
+/* Clinic Timings Section */
 .clinic-timings {
-  background-color: #f9f9f9;
-  padding: 20px;
+  background: url('https://img.freepik.com/free-photo/top-view-medical-desk-arrangement-with-empty-clipboard_23-2148502983.jpg?ga=GA1.1.1268382903.1737816630&semt=ais_hybrid&w=740') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the section properly */
+ background-position: center ; /* Centers the image */
+  padding: 50px 20px; /* Adjusted padding for better spacing */
   margin: 30px auto;
-  max-width: 600px;
-  border-radius: 10px;
+  width: 100%; /* Reduce the width to make the text part smaller */
+  height: auto; /* Automatic height to adjust according to content */
+  max-width: 900px; /* Maximum width for section */
+  border-radius: 15px; /* Slightly rounded corners */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
+  color:#6a11cb ; 
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  text-align: center; /* Center text horizontally */
 }
 
 .clinic-timings h2 {
-  text-align: center;
-  color: #4a4a4a;
-  margin-bottom: 15px;
+  color: #6a11cb; 
+  font-size: 2rem; /* Font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow for better contrast */
 }
 
 .clinic-timings ul {
   list-style: none;
   padding: 0;
+  display: block; /* Default block layout for list */
 }
 
 .clinic-timings li {
-  margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 1.2rem;
+  color: #333; /* Text color for the list */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for text for better readability */
+  margin-bottom: 15px; /* Space between list items */
 }
+
 
 /* Styling Icons */
 .contact i {
